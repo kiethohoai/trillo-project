@@ -6,3 +6,4 @@ Trillo Project — Master Flexbox
 005 A Basic Intro to Flexbox Adding More Flex Items
 006 Project Overview
 007 Defining Project Settings and Custom Properties
+008 Building the Overall Layout
