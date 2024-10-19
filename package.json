@@ -1,0 +1,16 @@
+{
+  "name": "natour-pro",
+  "version": "1.0.0",
+  "description": "011 Implementing BEM in the Natours Project",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:css",
+    "sv": "live-server"
+  },
+  "author": "john",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.79.1"
+  }
+}
