@@ -14,9 +14,46 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">Header Part</header>
+      <!-- todo HEADER -->
+      <header class="header">
+        <img class="logo" src="img/logo.png" alt="Logo" />
+
+        <form class="search" action="#!">
+          <input class="search__input" type="text" placeholder="Search hotels" />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+            <span class="user-nav__notification">7</span>
+          </div>
+
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use href="img/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">14</span>
+          </div>
+
+          <div class="user-nav__user">
+            <img class="user-nav__user-photo" src="img/user.jpg" alt="User Photo" />
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- todo CONTENT -->
       <div class="content">
-        <nav class="sidebar">Navigation</nav>
+        <!-- fixme SIDEBAR -->
+        <nav class="sidebar">Sidebar</nav>
+        <!-- fixme HOTEL VIEW -->
         <main class="hotel-view">Hotel View</main>
       </div>
     </div>

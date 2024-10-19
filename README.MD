@@ -7,3 +7,4 @@ Trillo Project — Master Flexbox
 006 Project Overview
 007 Defining Project Settings and Custom Properties
 008 Building the Overall Layout
+009 Building the Header - Part 1
