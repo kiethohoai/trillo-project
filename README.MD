@@ -13,3 +13,4 @@ Trillo Project — Master Flexbox
 012 Building the Navigation - Part 1
 013 Building the Navigation - Part 2
 014 Building the Hotel Overview - Part 1
+015 Building the Hotel Overview - Part 2
