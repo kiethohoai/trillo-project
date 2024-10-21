@@ -180,3 +180,47 @@
   color: var(--color-grey-light-4);
   padding: 2.5rem;
 }
+
+// OPTIMIZE MAIN
+//todo Gallery
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+//todo Overview
+.overview {
+  display: flex;
+  align-items: center;
+
+  &__heading {
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+  }
+
+  .btn-inline {
+  }
+
+  &__rating {
+  }
+  &__rating-average {
+  }
+  &__rating-count {
+  }
+}
