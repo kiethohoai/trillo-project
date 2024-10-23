@@ -268,8 +268,17 @@
   cursor: pointer;
   transition: all 0.3s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
   }
 
   &:focus {
@@ -358,5 +367,67 @@
 
   &__photo:not(:last-child) {
     margin-right: -1.5rem;
+  }
+}
+
+//TODO REVIEWS
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-grey-dark-1);
+    letter-spacing: 0.7px;
+  }
+  &__user-date {
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    color: var(--color-primary);
+    font-size: 1.8rem;
+  }
+
+  &::before {
+    content: "\201C";
+    font-family: sans-serif;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--color-grey-light-2);
+
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    z-index: 1;
   }
 }

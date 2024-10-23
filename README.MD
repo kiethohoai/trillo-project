@@ -16,3 +16,4 @@ Trillo Project — Master Flexbox
 015 Building the Hotel Overview - Part 2
 016 Building the Description Section - Part 1
 017 Building the Description Section - Part 2
+018 Building the User Reviews Section
