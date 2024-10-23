@@ -13,6 +13,12 @@ Grey dark 1: #333
 Grey dark 2: #777
 Grey dark 3: #999
 */
+/* //OPTIMIZE BREAK-POINT
+1200px 75em
+1100px 68.75em
+900px 56.25em
+600px 37.5em
+ */
 :root {
   --color-primary: #eb2f64;
   --color-primary-light: #ff3366;
@@ -44,6 +50,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -64,6 +75,13 @@ body {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 50rem;
 }
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 
 .header {
   font-size: 1.4rem;
@@ -76,6 +94,11 @@ body {
 
 .content {
   display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
@@ -99,6 +122,11 @@ body {
   border-bottom: var(--line);
   font-size: 1.4rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .detail {
+    padding: 3rem;
+  }
+}
 
 .description {
   background-color: aquamarine;
@@ -107,6 +135,12 @@ body {
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .description {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
@@ -219,11 +253,23 @@ body {
   list-style: none;
   margin-top: 3.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    margin: 0;
+  }
+}
 .side-nav__item {
   position: relative;
 }
 .side-nav__item:not(:last-child) {
   margin-bottom: 0.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .side-nav__item {
+    flex: 1;
+    margin: 0;
+  }
 }
 .side-nav__item::before {
   content: "";
@@ -251,6 +297,12 @@ body {
   position: relative;
   z-index: 10;
 }
+@media only screen and (max-width: 56.25em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    justify-content: center;
+    padding: 2rem;
+  }
+}
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
@@ -263,6 +315,11 @@ body {
   text-align: center;
   color: var(--color-grey-light-4);
   padding: 2.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .legal {
+    display: none;
+  }
 }
 
 .gallery {
@@ -401,6 +458,9 @@ body {
 .recommend__count {
   margin-right: auto;
 }
+.recommend__friends {
+  display: flex;
+}
 .recommend__photo {
   box-sizing: content-box;
   display: inline-block;
@@ -410,7 +470,7 @@ body {
   border-radius: 50%;
 }
 .recommend__photo:not(:last-child) {
-  margin-right: -1.5rem;
+  margin-right: -2rem;
 }
 
 .review {
@@ -420,6 +480,12 @@ body {
   margin-bottom: 3rem;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+  .review {
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+  }
 }
 .review__text {
   margin-bottom: 2rem;
@@ -470,6 +536,11 @@ body {
   padding: 3.5rem 0;
   margin: 0 auto;
   text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .cta {
+    padding: 2.5rem 0;
+  }
 }
 .cta__book-now {
   font-size: 2rem;
