@@ -19,3 +19,4 @@ Trillo Project — Master Flexbox
 018 Building the User Reviews Section
 019 Building the CTA Section
 020 Writing Media Queries - Part 1
+021 Writing Media Queries - Part 2

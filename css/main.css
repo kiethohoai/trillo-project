@@ -18,6 +18,7 @@ Grey dark 3: #999
 1100px 68.75em
 900px 56.25em
 600px 37.5em
+500px 
  */
 :root {
   --color-primary: #eb2f64;
@@ -91,6 +92,13 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 31.25em) {
+  .header {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
+}
 
 .content {
   display: flex;
@@ -127,6 +135,11 @@ body {
     padding: 3rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
+  }
+}
 
 .description {
   background-color: aquamarine;
@@ -140,6 +153,12 @@ body {
   .description {
     padding: 2rem;
     margin-right: 3rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 
@@ -164,6 +183,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 31.25em) {
+  .search {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
 }
 .search__input {
   font-family: inherit;
@@ -303,11 +329,23 @@ body {
     padding: 2rem;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
+    padding: 1.5rem 0.5rem;
+  }
+}
 .side-nav__icon {
   width: 1.75rem;
   height: 1.75rem;
   margin-right: 2rem;
   fill: currentColor;
+}
+@media only screen and (max-width: 37.5em) {
+  .side-nav__icon {
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+  }
 }
 
 .legal {
@@ -341,6 +379,12 @@ body {
   letter-spacing: 1px;
   padding: 1.5rem 3rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .overview__heading {
+    font-style: 1.8rem;
+    padding: 1rem 1.5rem;
+  }
+}
 .overview__stars {
   margin-right: auto;
   display: flex;
@@ -369,14 +413,30 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 37.5em) {
+  .overview__rating {
+    padding: 0 1.5rem;
+  }
+}
 .overview__rating-average {
   font-size: 2.25rem;
   font-weight: 300;
   margin-bottom: -4px;
 }
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-average {
+    font-size: 1.8rem;
+  }
+}
 .overview__rating-count {
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 37.5em) {
+  .overview__rating-count {
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+  }
 }
 
 .btn-inline {
